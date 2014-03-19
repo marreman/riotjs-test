@@ -1,6 +1,6 @@
 {
-  "name": "riot-test",
-  "description": "just trying out riot",
+  "name": "riotjs-test",
+  "description": "just trying out riot.js",
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-include-source": "^0.3.4",
