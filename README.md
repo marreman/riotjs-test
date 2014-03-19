@@ -7,4 +7,4 @@ EVENTS LIST
 -----------
 Different events with explanations.
 
- - `init` - runs when all files are loaded and initialized
+ - `start` - runs when all files are loaded and initialized
