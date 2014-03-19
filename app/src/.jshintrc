@@ -1,5 +1,6 @@
 {
   "strict": true,
+  "quotmark": "single",
   "camelcase": true,
   "curly": true,
   "eqnull": true,
@@ -10,7 +11,8 @@
   "globals": {
     "$": true,
     "window": true,
-    "setTimeout": true
+    "setTimeout": true,
+    "app": true
   },
   "browser": true,
   "smarttabs": true

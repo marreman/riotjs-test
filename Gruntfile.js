@@ -19,6 +19,7 @@ module.exports = function(grunt) {
     htmlConvert: {
       options: {
         base: 'app/src/modules',
+        quoteChar: '\'',
         rename: function (moduleName) {
           return moduleName.replace('.html', '');
         }

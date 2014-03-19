@@ -1,1 +1,1 @@
-window.app.trigger('start');
+app.trigger('start', app);
