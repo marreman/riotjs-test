@@ -1,1 +1,0 @@
-app.trigger('start', app);

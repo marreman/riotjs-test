@@ -6,13 +6,17 @@
   <!-- include: "type": "css", "files": "src/**/*.css" -->
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="module-menu"></div>
+    <div class="module-main-view"></div>
+  </div>
 
-  <!-- include: "type": "js", "files": "lib/zepto.js" -->
+  <!-- include: "type": "js", "files": "lib/jquery.js" -->
   <!-- include: "type": "js", "files": "lib/riot.js" -->
-  <!-- include: "type": "js", "files": "src/app.js" -->
-  <!-- include: "type": "js", "files": "src/templates.js" -->
+  <!-- include: "type": "js", "files": "src/shared/**/*.js" -->
   <!-- include: "type": "js", "files": "src/modules/**/*.js" -->
-  <!-- include: "type": "js", "files": "src/init.js" -->
+  <script>
+    app.trigger('start', app);
+  </script>
 </body>
 </html>

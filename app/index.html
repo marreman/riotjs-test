@@ -3,18 +3,27 @@
 <head>
   <title>riot-test</title>
   <meta charset="utf-8" />
-  <link href="/src/modules/exercises/exercises.css" rel="stylesheet" type="text/css" />
+  <link href="/src/modules/main-view/main-view.css" rel="stylesheet" type="text/css" />
+<link href="/src/modules/menu/menu.css" rel="stylesheet" type="text/css" />
+<link href="/src/shared/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div class="module-menu"></div>
+    <div class="module-main-view"></div>
+  </div>
 
-  <script src="/lib/zepto.js"></script>
+  <script src="/lib/jquery.js"></script>
   <script src="/lib/riot.js"></script>
-  <script src="/src/app.js"></script>
-  <script src="/src/templates.js"></script>
-  <script src="/src/modules/data/data.js"></script>
-<script src="/src/modules/data/model.js"></script>
-<script src="/src/modules/exercises/exercises-presenter.js"></script>
-  <script src="/src/init.js"></script>
+  <script src="/src/shared/app.js"></script>
+<script src="/src/shared/compiled-module-templates.js"></script>
+<script src="/src/shared/data/data.js"></script>
+<script src="/src/shared/data/model.js"></script>
+<script src="/src/shared/data/view-model.js"></script>
+  <script src="/src/modules/main-view/main-view-presenter.js"></script>
+<script src="/src/modules/menu/menu-presenter.js"></script>
+  <script>
+    app.trigger('start', app);
+  </script>
 </body>
 </html>

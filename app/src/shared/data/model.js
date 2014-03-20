@@ -1,4 +1,4 @@
-app('data.model', function () {
+app('shared.data.model', function () {
   'use strict';
 
   function Model(data) {

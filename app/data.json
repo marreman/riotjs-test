@@ -1,0 +1,22 @@
+{
+  "excerpts": [
+    {
+      "name": "Lorem",
+      "href": "lorem"
+    },
+    {
+      "name": "Ipsum",
+      "href": "ipsum"
+    }
+  ],
+  "articles": {
+    "lorem": {
+      "heading": "Lorem ipsum dolor sit amet",
+      "content": "Labore nostrud nisi duis sit ad tempor aute amet sint qui. Do Lorem veniam adipisicing ea nulla pariatur do eiusmod qui minim veniam consequat dolore enim. Adipisicing adipisicing esse commodo eiusmod nulla minim in sunt. Occaecat occaecat laboris non exercitation labore elit veniam est quis laborum nisi amet. Laborum in ullamco cupidatat laborum laboris proident commodo amet cillum officia esse dolor excepteur. Nisi velit exercitation occaecat ipsum cillum nulla. Occaecat duis laboris ex sint"
+    },
+    "ipsum": {
+      "heading": "Aliquam tincidunt mauris eu risus",
+      "content": "Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. \n Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi."
+    }
+  }
+}

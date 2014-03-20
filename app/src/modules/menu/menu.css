@@ -1,0 +1,10 @@
+.menu {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #333;
+}
+
+.menu-header {
+    color: red;
+}

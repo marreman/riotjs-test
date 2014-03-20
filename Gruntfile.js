@@ -24,9 +24,9 @@ module.exports = function(grunt) {
           return moduleName.replace('.html', '');
         }
       },
-      templates: {
+      'compiled-module-templates': {
         src: ['app/src/modules/**/*.tpl.html'],
-        dest: 'app/src/templates.js'
+        dest: 'app/src/shared/compiled-module-templates.js'
       }
     },
 
@@ -36,6 +36,36 @@ module.exports = function(grunt) {
         reporter: require('jshint-stylish')
       },
       all: ['Gruntfile.js', 'app/src/**/*.js']
+    },
+
+    uglify: {
+      dist: {
+        files: {
+          'app/dist/app.min.js': [
+            'app/src/shared/**/*.js',
+            'app/src/modules/**/*.js'
+          ]
+        }
+      }
+    },
+
+    less: {
+      dist: {
+        options: {
+          // paths: ["assets/css"],
+          cleancss: true
+          // modifyVars: {
+          //   imgPath: '"http://mycdn.com/path/to/images"',
+          //   bgColor: 'red'
+          // }
+        },
+        files: {
+          'app/dist/app.min.css': [
+            'app/src/shared/**/*.css',
+            'app/src/modules/**/*.css'
+          ]
+        }
+      }
     },
 
     watch: {
@@ -53,8 +83,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-include-source');
   grunt.loadNpmTasks('grunt-html-convert');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['htmlConvert', 'includeSource', 'jshint']);
+  grunt.registerTask('dist', ['default', 'uglify', 'less']);
 
 };
